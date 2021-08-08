@@ -24,7 +24,7 @@ void main() {
 }
 ~~~
 # chap 5. Scaffold & AppBar Widgets
-### the goal : make a Scaffold with some layout widget inside
+### the goal : make a Scaffold with some layout widgets inside
 1) modify "main.dart" from "lib/"
 ~~~
 import 'package:flutter/material.dart';
