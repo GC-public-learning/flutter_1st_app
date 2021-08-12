@@ -81,7 +81,7 @@ child: Text(
              - asset: fonts/TrajanPro_Bold.ttf
                weight: 700
     ~~~
-    <br/>&emsp; replace the uncomment block and save
+    <br/>&emsp; replace the uncommented block and save
     ~~~
     fonts:
        - family: IndieFlower
