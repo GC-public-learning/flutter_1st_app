@@ -48,3 +48,48 @@ void main() {
   ));
 }
 ~~~
+# chap 6. Colours & Fonts
+### the goal : customize some things
+1) add background color on the appbar and button
+~~~
+backgroundColor: Colors.red[600],
+~~~
+3) personalize text widget
+~~~
+child: Text(
+    'Hello ninjas',
+      style: TextStyle(
+        fontSize: 20.0,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 2.0,
+        color: Colors.grey[600],
+      ),
+~~~
+4) download and use a personalized font
+    <br/>&emsp; make a "fonts/" folder and paste the .ttf file
+    <br/>&emsp; in pubspec.yaml uncomment that block :
+    ~~~
+    fonts:
+       - family: Schyler
+         fonts:
+             - asset: fonts/Schyler-Regular.ttf
+             - asset: fonts/Schyler-Italic.ttf
+               style: italic
+         - family: Trajan Pro
+           fonts:
+             - asset: fonts/TrajanPro.ttf
+             - asset: fonts/TrajanPro_Bold.ttf
+               weight: 700
+    ~~~
+    <br/>&emsp; replace the uncomment block and save
+    ~~~
+    fonts:
+       - family: IndieFlower
+         fonts:
+             - asset: fonts/IndieFlower-Regular.ttf
+    ~~~
+    <br/>&emsp; click on "get dependencies link on "main.dart"
+    <br/>&emsp; add new propriety on the last personalized text widget
+    ~~~
+    ~~~
+
