@@ -54,7 +54,7 @@ void main() {
 ~~~
 backgroundColor: Colors.red[600],
 ~~~
-3) personalize text widget
+2) personalize text widget
 ~~~
 child: Text(
     'Hello ninjas',
@@ -65,7 +65,7 @@ child: Text(
         color: Colors.grey[600],
       ),
 ~~~
-4) download and use a personalized font
+3) download and use a personalized font
     <br/>&emsp; make a "fonts/" folder and paste the .ttf file
     <br/>&emsp; in pubspec.yaml uncomment that block :
     ~~~
@@ -91,5 +91,41 @@ child: Text(
     <br/>&emsp; click on "get dependencies link on "main.dart"
     <br/>&emsp; add new propriety on the last personalized text widget
     ~~~
+    fontFamily: 'IndieFlower'
     ~~~
 
+# chap 7.  Stateless Widgets & Hot Reload
+
+1) create a statelless Widget named "Home" (stless tab) and copy all the scaffold after the return instruction of the new widget
+~~~
+Scaffold(
+      appBar: AppBar(
+        title: Text('my first app'),
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+
+      ),
+      body: Center(
+        child: Text(
+          'Hello ninjas',
+          style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2.0,
+              color: Colors.grey[600],
+              fontFamily: 'IndieFlower'
+          ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Text('click'),
+        onPressed: () {},
+        backgroundColor: Colors.red[600],
+      ),
+    );
+~~~
+2) call the "Home" widget on the in the place of the cut scaffold :
+~~~
+home: Home(),
+~~~
+### now just saving is enough to directly apply changes on the preview !
