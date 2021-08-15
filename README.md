@@ -129,3 +129,40 @@ Scaffold(
 home: Home(),
 ~~~
 ### now just saving is enough to directly apply changes on the preview !
+
+# chap 8.  Images & Assets
+
+1) use a NetworkImage in the place of the text widget in from the body
+~~~
+child: Image(
+    image: NetworkImage('https://img3.freepng.fr/dy/e639e8454906104a3635b16b0d00e407/L0KzQYm3U8MyN6N2iZH0aYP2gLBuTfRwdqZ5i59sb3bpdba0gf5lNZV0jdlxboX3g37tkv90fJpzf59yY3nxd370lfZncV54iORybnvvdcS0VfFjbpc4SNQDZHS4RIS1UcgzOGY1Sqg6NUK1RYOCUMM2PWk2RuJ3Zx==/kisspng-donuts-coffee-and-doughnuts-frosting-icing-muffi-sprinkles-5abff30b8dd543.182050261522529035581.png')
+),
+~~~
+2) use an Asset Image in place of the Network image
+    <br/>&emsp; - create a new folder "assets" and paste the image you want to use inside
+    <br/>&emsp; - replace this block code on pubspec.yaml
+    ~~~
+    # assets:
+      #   - images/a_dot_burr.jpeg
+      #   - images/a_dot_ham.jpeg
+    ~~~
+    by
+    ~~~
+assets:
+    - assets/
+    ~~~
+    <br/>&emsp; - press "get dependencies" on main.dart
+    <br/>&emsp; - use the image from assets in the child of the body
+~~~
+child: Image(
+      image: AssetImage('assets/donuts_choco.png'),
+    ),
+~~~
+3) use this more simple instruction in the last one :
+~~~
+child: Image.asset('assets/donuts_choco.png'),
+~~~
+or this for a network image:
+~~~
+child: Image.network('https://img3.freepng.fr/dy/e639e8454906104a3635b16b0d00e407/L0KzQYm3U8MyN6N2iZH0aYP2gLBuTfRwdqZ5i59sb3bpdba0gf5lNZV0jdlxboX3g37tkv90fJpzf59yY3nxd370lfZncV54iORybnvvdcS0VfFjbpc4SNQDZHS4RIS1UcgzOGY1Sqg6NUK1RYOCUMM2PWk2RuJ3Zx==/kisspng-donuts-coffee-and-doughnuts-frosting-icing-muffi-sprinkles-5abff30b8dd543.182050261522529035581.png'),
+~~~

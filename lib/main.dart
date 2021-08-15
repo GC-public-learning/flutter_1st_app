@@ -17,7 +17,8 @@ class Home extends StatelessWidget {
 
       ),
       body: Center(
-        child: Text(
+        child: Image.asset('assets/donuts_choco.png'),
+        /*Text(
           'Hello ninjas',
           style: TextStyle(
               fontSize: 20.0,
@@ -26,7 +27,7 @@ class Home extends StatelessWidget {
               color: Colors.grey[600],
               fontFamily: 'IndieFlower'
           ),
-        ),
+        ),*/
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('click'),
