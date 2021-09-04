@@ -176,4 +176,47 @@ or this for a network image:
 child: Image.network('https://img3.freepng.fr/dy/e639e8454906104a3635b16b0d00e407/L0KzQYm3U8MyN6N2iZH0aYP2gLBuTfRwdqZ5i59sb3bpdba0gf5lNZV0jdlxboX3g37tkv90fJpzf59yY3nxd370lfZncV54iORybnvvdcS0VfFjbpc4SNQDZHS4RIS1UcgzOGY1Sqg6NUK1RYOCUMM2PWk2RuJ3Zx==/kisspng-donuts-coffee-and-doughnuts-frosting-icing-muffi-sprinkles-5abff30b8dd543.182050261522529035581.png'),
 ~~~
 
-# chap 9.
+# chap 9. Buttons & icons
+
+1) in the body replace the last image by an icon :
+~~~
+body: Center(
+    //child: Image.asset('assets/donuts_choco.png'),
+    child : Icon(
+      Icons.airport_shuttle,
+      color: Colors.lightBlue,
+      size : 50.0,
+    ),
+~~~
+2) replace the icon by an elevated button
+~~~
+ child : ElevatedButton(
+  onPressed: () {
+    print('button pressed');
+  },
+  child: Text('click me'),
+),
+~~~
+3) replace the last button by a button with icon
+~~~
+child : ElevatedButton.icon(
+  onPressed: () {},
+  icon : Icon(
+    Icons.mail
+  ),
+  label: Text('mail me'),
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Colors.green)
+  )
+)
+~~~
+4) a IconButton is possible to use to
+~~~
+child : IconButton(
+  onPressed: () {
+    print('clicked !');
+  },
+  icon : Icon(Icons.alternate_email),
+  color: Colors.amber
+)
+~~~
