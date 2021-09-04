@@ -17,7 +17,8 @@ class Home extends StatelessWidget {
 
       ),
       body: Center(
-        child: Image.asset('assets/donuts_choco.png'),
+        //child: Image.asset('assets/donuts_choco.png'),
+        child : Image.network('https://img3.freepng.fr/dy/e639e8454906104a3635b16b0d00e407/L0KzQYm3U8MyN6N2iZH0aYP2gLBuTfRwdqZ5i59sb3bpdba0gf5lNZV0jdlxboX3g37tkv90fJpzf59yY3nxd370lfZncV54iORybnvvdcS0VfFjbpc4SNQDZHS4RIS1UcgzOGY1Sqg6NUK1RYOCUMM2PWk2RuJ3Zx==/kisspng-donuts-coffee-and-doughnuts-frosting-icing-muffi-sprinkles-5abff30b8dd543.182050261522529035581.png')
         /*Text(
           'Hello ninjas',
           style: TextStyle(
