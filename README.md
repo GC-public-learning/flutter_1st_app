@@ -98,7 +98,10 @@ child: Text(
 
 1) create a statelless Widget named "Home" (stless tab) and copy all the scaffold after the return instruction of the new widget
 ~~~
-Scaffold(
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: Text('my first app'),
         centerTitle: true,
@@ -123,10 +126,16 @@ Scaffold(
         backgroundColor: Colors.red[600],
       ),
     );
+  }
+}
 ~~~
 2) call the "Home" widget on the in the place of the cut scaffold :
 ~~~
-home: Home(),
+void main() {
+  runApp(MaterialApp(
+    home: Home(),
+  ));
+}
 ~~~
 ### now just saving is enough to directly apply changes on the preview !
 
