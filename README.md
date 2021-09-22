@@ -242,11 +242,11 @@ padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
 ~~~
 padding : EdgeInsets.fromLTRB(10.0, 20.0, 15.0, 25.0),
 ~~~
-5) add a margin attribute (all properties are the same the the padding)
+5) add a margin attribute (all properties are the same than the padding)
 ~~~
 margin : EdgeInsets.all(20.0),
 ~~~
-6) in order to use a container to show a widget with only a padding to apply it's possible to use a padding widget :
+6) in order to use a container to show a widget with only a padding to apply, it's possible to use a padding widget :
 ~~~
 body : Padding(
     padding: EdgeInsets.all(20.0),
