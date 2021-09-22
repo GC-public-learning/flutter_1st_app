@@ -16,15 +16,11 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
 
       ),
-      body: Center(
-        //child: Image.asset('assets/donuts_choco.png'),
-        child : IconButton(
-          onPressed: () {
-            print('clicked !');
-          },
-          icon : Icon(Icons.alternate_email),
-          color: Colors.amber
-        )
+      body: Container(
+        padding: EdgeInsets.all(20.0),
+        margin : EdgeInsets.all(20.0),
+        color: Colors.grey[400],
+        child: Text('Hello !'),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('click'),

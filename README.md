@@ -220,3 +220,36 @@ child : IconButton(
   color: Colors.amber
 )
 ~~~
+
+# chap 10. Containers & Padding
+
+1) replace the body of the scaffold by a container widget with a color and a child attribute :
+~~~
+body: Container(
+    color: Colors.grey[400],
+    child: Text('Hello !'),
+),
+~~~
+2) add a padding attribute with .all option to apply same padding for all dimensions :
+~~~
+padding: EdgeInsets.all(20.0),
+~~~
+3) possible to specify only the horizontal and vertical dimensions :
+~~~
+padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+~~~
+4) or specify all sides :
+~~~
+padding : EdgeInsets.fromLTRB(10.0, 20.0, 15.0, 25.0),
+~~~
+5) add a margin attribute (all properties are the same the the padding)
+~~~
+margin : EdgeInsets.all(20.0),
+~~~
+6) in order to use a container to show a widget with only a padding to apply it's possible to use a padding widget :
+~~~
+body : Padding(
+    padding: EdgeInsets.all(20.0),
+    child : Text('Hello !'),
+),
+~~~
