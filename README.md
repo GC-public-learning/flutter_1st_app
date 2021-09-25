@@ -253,3 +253,41 @@ body : Padding(
     child : Text('Hello !'),
 ),
 ~~~
+
+# chap 11. Rows
+
+1) replace the content of the body by a row widget with a list of different widgets inside
+~~~
+body: Row(
+        children: <Widget>[
+          Text('Hello world !'),
+          ElevatedButton(
+            onPressed:(){},
+            style : ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.amber)),
+            child: Text('click me'),
+
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text('inside container'),
+          ),
+        ],
+      ),
+~~~
+2) add an alignment attribute on the row to differently display its element
+~~~
+// x axis handling
+mainAxisAlignment: MainAxisAlignment.center, // center
+mainAxisAlignment: MainAxisAlignment.spaceBetween, // space between but not on the sides
+mainAxisAlignment: MainAxisAlignment.spaceEvenly, // space between and on the sides
+mainAxisAlignment: MainAxisAlignment.end, // all widget on the right
+mainAxisAlignment: MainAxisAlignment.spaceAround, // spaces between widget bigger than side spaces
+
+
+// y axis handling
+crossAxisAlignment: CrossAxisAlignment.stretch, // stretch the whole height of each widget
+crossAxisAlignment: CrossAxisAlignment.stretch, // default
+crossAxisAlignment: CrossAxisAlignment.start, // top of each widget on the top of the row
+crossAxisAlignment: CrossAxisAlignment.end, // bottom of each widget on the end of the row
+~~~
