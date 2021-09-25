@@ -279,10 +279,10 @@ body: Row(
 ~~~
 // x axis handling
 mainAxisAlignment: MainAxisAlignment.center, // center
-mainAxisAlignment: MainAxisAlignment.spaceBetween, // space between but not on the sides
-mainAxisAlignment: MainAxisAlignment.spaceEvenly, // space between and on the sides
-mainAxisAlignment: MainAxisAlignment.end, // all widget on the right
-mainAxisAlignment: MainAxisAlignment.spaceAround, // spaces between widget bigger than side spaces
+mainAxisAlignment: MainAxisAlignment.spaceBetween, // spaces between but not on the sides
+mainAxisAlignment: MainAxisAlignment.spaceEvenly, // spaces between and on the sides
+mainAxisAlignment: MainAxisAlignment.end, // all widgets on the right
+mainAxisAlignment: MainAxisAlignment.spaceAround, // spaces between widgets bigger than sides spaces
 
 
 // y axis handling
