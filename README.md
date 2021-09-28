@@ -294,7 +294,7 @@ crossAxisAlignment: CrossAxisAlignment.end, // bottom of each widget on the end 
 
 # chap 12. Columns
 
-1) 1) replace the content of the body by a column widget with a list of 3 containers inside
+1) replace the content of the body by a column widget with a list of 3 containers inside
 ~~~
 body: Column(
     children: <Widget>[
