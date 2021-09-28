@@ -291,3 +291,54 @@ crossAxisAlignment: CrossAxisAlignment.stretch, // default
 crossAxisAlignment: CrossAxisAlignment.start, // top of each widget on the top of the row
 crossAxisAlignment: CrossAxisAlignment.end, // bottom of each widget on the end of the row
 ~~~
+
+chap 12. Columns
+
+1) 1) replace the content of the body by a column widget with a list of 3 containers inside
+~~~
+body: Column(
+    children: <Widget>[
+      Container(
+        padding: EdgeInsets.all(20.0),
+        color : Colors.cyan,
+        child: Text('one'),
+      ),
+      Container(
+        padding: EdgeInsets.all(30.0),
+        color : Colors.pink,
+        child: Text('two'),
+      ),
+      Container(
+        padding: EdgeInsets.all(40.0),
+        color : Colors.amber,
+        child: Text('three'),
+      ),
+    ],
+),
+~~~
+2) add an alignment attribute on the row to differently display its element
+~~~
+// (same instruction than the "rows" but inverted)
+// (up and down inverted with left and right in the Alignment properties)
+
+// y axis handling
+mainAxisAlignment: MainAxisAlignment.center, // center
+// etc...
+
+// x axis handling
+crossAxisAlignment: CrossAxisAlignment.start, // left of each widget on the left of the column
+// etc...
+~~~
+3) add a row in the column
+~~~
+Row(
+    mainAxisAlignment: MainAxisAlignment.start,
+    // needed to be specified as the same of the crossAlignement of the column to be displayed in
+    // the same way than the other widgets of the column
+
+    children: <Widget>[
+      Text('Hello'),
+      Text('World'),
+    ],
+),
+~~~
