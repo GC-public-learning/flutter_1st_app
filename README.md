@@ -292,7 +292,7 @@ crossAxisAlignment: CrossAxisAlignment.start, // top of each widget on the top o
 crossAxisAlignment: CrossAxisAlignment.end, // bottom of each widget on the end of the row
 ~~~
 
-chap 12. Columns
+# chap 12. Columns
 
 1) 1) replace the content of the body by a column widget with a list of 3 containers inside
 ~~~
