@@ -348,6 +348,6 @@ Row(
 - when the cursor is on a widget it's possible to click on the "light icon" in order to make some
 actions on it. (move, wrap on another widget, etc...)
 
-- same actions are available on the "flutter outline" on the right of the screen with
+- same actions are available on the "flutter outline" tab on the right of the screen with
 "android studio"
 
