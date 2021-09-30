@@ -420,7 +420,7 @@ children: <Widget>[
 ),
 ~~~
 
-4) add an image on the beginning on the list of widget and wrap it on a expanded widget
+4) add an image on the beginning of the list of widgets and wrap it on a expanded widget
 ~~~
 Expanded(
   flex: 2
