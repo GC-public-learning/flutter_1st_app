@@ -353,7 +353,7 @@ actions on it. (move, wrap on another widget, etc...)
 
 # 14. Expanded widgets
 
-1) replace the body content by 3 containers
+1) replace the body content by 3 containers in a row
 ~~~
 body: Row(
     children: <Widget>[
