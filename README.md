@@ -351,3 +351,81 @@ actions on it. (move, wrap on another widget, etc...)
 - same actions are available on the "flutter outline" tab on the right of the screen with
 "android studio"
 
+# 14. Expanded widgets
+
+1) replace the body content by 3 containers
+~~~
+body: Row(
+    children: <Widget>[
+      Container(
+        padding: EdgeInsets.all(30.0),
+        color: Colors.cyan,
+        child: Text('1'),
+      ),
+      Container(
+        padding: EdgeInsets.all(30.0),
+        color: Colors.pinkAccent,
+        child: Text('2'),
+      ),
+      Container(
+        padding: EdgeInsets.all(30.0),
+        color: Colors.amber,
+        child: Text('3'),
+      ),
+    ]
+),
+~~~
+
+2) wrap each container in a "Expended" widget in order to expend the widgets on the whole length
+of the screen
+~~~
+Expanded(
+    child: Container(
+      padding: EdgeInsets.all(30.0),
+      color: Colors.cyan,
+      child: Text('1'),
+    ),
+ ),
+ // etc...
+~~~
+3   add a "flex" attribute on the  expanded widgets (to enlarge each widget with a custom proportion)
+~~~
+body: Row(
+children: <Widget>[
+  Expanded(
+    flex: 3,
+    child: Container(
+      padding: EdgeInsets.all(30.0),
+      color: Colors.cyan,
+      child: Text('1'),
+    ),
+  ),
+  Expanded(
+    flex: 2,
+    child: Container(
+      padding: EdgeInsets.all(30.0),
+      color: Colors.pinkAccent,
+      child: Text('2'),
+    ),
+  ),
+  Expanded(
+    flex: 1,
+    child: Container(
+      padding: EdgeInsets.all(30.0),
+      color: Colors.amber,
+      child: Text('3'),
+    ),
+  ),
+]
+),
+~~~
+
+4) add an image on the beginning on the list of widget and wrap it on a expanded widget
+~~~
+Expanded(
+  flex: 2
+  child: Image.asset('assets/donuts_choco.png')
+),
+~~~
+
+

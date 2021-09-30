@@ -16,33 +16,37 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
 
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Row(
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start, // center
-            children: <Widget>[
-              Text('Hello'),
-              Text('World'),
-            ],
+          Expanded(
+              flex: 2,
+              child: Image.asset('assets/donuts_choco.png')
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color : Colors.cyan,
-            child: Text('one'),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color : Colors.pink,
-            child: Text('two'),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(40.0),
-            color : Colors.amber,
-            child: Text('three'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
           ),
-        ],
+        ]
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('click'),
