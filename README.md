@@ -155,7 +155,7 @@ child: Image(
       #   - images/a_dot_burr.jpeg
       #   - images/a_dot_ham.jpeg
 ~~~
-    by
+by
 ~~~
 assets:
     - assets/
