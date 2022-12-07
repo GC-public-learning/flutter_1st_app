@@ -160,8 +160,8 @@ by
 assets:
     - assets/
 ~~~
-    <br/>&emsp; - press "get dependencies" on main.dart
-    <br/>&emsp; - use the image from assets in the child of the body
+<br/>&emsp; - press "get dependencies" on main.dart
+<br/>&emsp; - use the image from assets in the child of the body
 ~~~
 child: Image(
       image: AssetImage('assets/donuts_choco.png'),
