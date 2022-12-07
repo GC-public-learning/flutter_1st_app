@@ -150,16 +150,16 @@ child: Image(
 2) use an Asset Image in place of the Network image
     <br/>&emsp; - create a new folder "assets" and paste the image you want to use inside
     <br/>&emsp; - replace this block code on pubspec.yaml
-    ~~~
+~~~
     # assets:
       #   - images/a_dot_burr.jpeg
       #   - images/a_dot_ham.jpeg
-    ~~~
+~~~
     by
-    ~~~
+~~~
 assets:
     - assets/
-    ~~~
+~~~
     <br/>&emsp; - press "get dependencies" on main.dart
     <br/>&emsp; - use the image from assets in the child of the body
 ~~~
